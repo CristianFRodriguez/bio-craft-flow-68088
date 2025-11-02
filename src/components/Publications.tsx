@@ -19,6 +19,7 @@ import pub10Image from "@/assets/pub-10.png";
 import pub11Image from "@/assets/pub-11.png";
 import pub12Image from "@/assets/pub-12.png";
 import pub13Image from "@/assets/pub-13.png";
+import pub14Image from "@/assets/pub-14.png";
 
 interface Publication {
   id: string;
@@ -33,6 +34,23 @@ interface Publication {
 }
 
 const publicationsData: Publication[] = [
+  {
+    id: "pub-14",
+    title: "Assessment of CRISPRa-mediated gdnf overexpression in an In vitro Parkinson's disease model",
+    journal: "TBD",
+    year: 2024,
+    type: "Journal Article",
+    summary:
+      "Parkinson's disease (PD) presents a significant challenge in medical science, as current treatments are limited to symptom management and often carry significant side effects. Our study introduces an innovative approach to evaluate the effects of gdnf overexpression mediated by CRISPRa in an in vitro model of Parkinson's disease. The expression of gdnf can have neuroprotective effects, being related to the modulation of neuroinflammation and pathways associated with cell survival, differentiation, and growth. We have developed a targeted delivery system using a magnetite nanostructured vehicle for the efficient transport of genetic material. This system has resulted in a substantial increase, up to 200-fold) in gdnf expression in an In vitro model of Parkinson's disease using a mixed primary culture of astrocytes, neurons, and microglia. The delivery system exhibits significant endosomal escape of more than 56%, crucial for the effective delivery and activation of the genetic material within cells. The increased gdnf expression correlates with a notable reduction in MAO-B complex activity, reaching basal values of 14.8 μU/μg of protein, and a reduction in reactive oxygen species. Additionally, there is up to a 34.6% increase in cell viability in an In vitro Parkinson's disease model treated with the neurotoxin MPTP. Our study shows that increasing gdnf expression can remediate some of the cellular symptoms associated with Parkinson's disease in an in vitro model of the disease using a novel nanostructured delivery system.",
+    tags: [
+      "Magnetic & Field-Driven Systems",
+      "Cellular & Biofabrication Modeling",
+      "Nanomaterials & Polymers",
+      "Physicochemical, Magnetic & Optical Characterization",
+    ],
+    image: pub14Image,
+    link: "#",
+  },
   {
     id: "pub-1",
     title:

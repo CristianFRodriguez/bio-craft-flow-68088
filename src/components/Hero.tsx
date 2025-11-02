@@ -63,7 +63,7 @@ export const Hero = () => {
               variant="outline"
               size="lg"
               className="w-52 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://scholar.google.com', '_blank')}
+              onClick={() => window.open('https://scholar.google.com/citations?user=rdzwkSYAAAAJ&hl=en', '_blank')}
             >
               <GraduationCap className="mr-2 h-5 w-5" />
               Google Scholar
@@ -72,7 +72,7 @@ export const Hero = () => {
               variant="outline"
               size="lg"
               className="w-52 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 hover:scale-105"
-              onClick={() => window.open('https://linkedin.com', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/paula-guzm%C3%A1n/', '_blank')}
             >
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
@@ -81,7 +81,7 @@ export const Hero = () => {
               variant="outline"
               size="lg"
               className="w-52 border-2 border-accent text-primary hover:bg-accent transition-all duration-300 hover:scale-105"
-              onClick={() => window.location.href = 'mailto:pa.guzmans@uniandes.edu.co'}
+              onClick={() => window.location.href = 'mailto:pa-guzmans@uniandes.edu.co'}
             >
               <Mail className="mr-2 h-5 w-5" />
               Contact

@@ -49,234 +49,253 @@ const SectionIconMap = {
   BookOpenCheck,
   ClipboardList
 } as const;
-const events: TimelineEvent[] = [{
-  id: "bachelor",
-  startDate: "2018",
-  endDate: "2022",
-  type: "education",
-  title: "Bachelor's in Biomedical Engineering",
-  institution: "Universidad de los Andes",
-  location: "Bogotá, Colombia",
-  shortDescription: "Third place among graduating class. Vamos Pa'lante Scholarship.",
-  fullDescription: [],
-  sections: [{
-    title: "Academic Recognition",
-    icon: "GraduationCap",
-    items: [
-      "Third place among graduates in Biomedical Engineering Bachelor's program",
-      "Vamos Pa'lante Scholarship during semesters 2021-2 and 2022-1 for outstanding academic performance",
-      "Comprehensive training in biomedical engineering with focus on molecular biotechnology"
-    ]
-  }, {
-    title: "Study Areas",
-    icon: "FlaskConical",
-    items: [
-      "Molecular and Cellular Biotechnology",
-      "Biomaterials and Nanobiomaterials",
-      "Tissue Engineering",
-      "Medical Devices",
-      "Computational Modeling"
-    ]
-  }],
-  achievements: [
-    "Third place among graduating class",
-    "Vamos Pa'lante Scholarship (2021-2022)",
-    "Outstanding training in biomedical engineering"
-  ],
-  highlights: ["Academic Distinction", "Merit Scholarship"],
-  logo: uniandesLogo,
-  ranking: "QS #212"
-}, {
-  id: "master",
-  startDate: "2022",
-  endDate: "2024",
-  type: "education",
-  title: "Master's in Biomedical Engineering",
-  institution: "Universidad de los Andes",
-  location: "Bogotá, Colombia",
-  shortDescription: "First place among graduates. Research in gene therapies and nanobiomaterials.",
-  fullDescription: [],
-  sections: [
-    {
-      title: "Academic Achievements",
+const events: TimelineEvent[] = [
+  {
+    id: "tech-codevelopment",
+    startDate: "Jan 2025",
+    endDate: "Present",
+    type: "work",
+    title: "Professional in Technology Codevelopment Industrial Projects",
+    institution: "Ecosistema de Innovación, Emprendimiento y Transferencia - Uniandes",
+    location: "On-site",
+    shortDescription: "Managing technology transfer projects across multiple industries. $5M in grants obtained.",
+    fullDescription: [],
+    sections: [
+      {
+        title: "Project Management",
+        icon: "ClipboardList",
+        items: [
+          "Obtained, awarded and managed technology transfer projects between universities and companies",
+          "Work with diverse industries: software, food tech, biotechnology, government tech, pharmaceutical, and security",
+          "Strategic identification of competencies and market opportunities",
+          "Full-time on-site coordination and execution"
+        ]
+      },
+      {
+        title: "Key Achievements",
+        icon: "GraduationCap",
+        items: [
+          "Helped obtain grants totaling $5 Million USD",
+          "Signed 5 new agreements between the university and leading companies",
+          "Successfully bridged academic research with industrial applications",
+          "Identified and leveraged competitive advantages in technology transfer"
+        ]
+      }
+    ],
+    highlights: ["Technology Transfer", "$5M Grants", "Industry Partnerships"],
+    logo: uniandesLogo
+  },
+  {
+    id: "research-professional",
+    startDate: "Jul 2024",
+    endDate: "Present",
+    type: "work",
+    title: "Research Project Professional",
+    institution: "Universidad de los Andes",
+    location: "Department of Biomedical Engineering",
+    shortDescription: "Technology transfer and project management with Plastinovo S.A.S.",
+    fullDescription: [],
+    sections: [
+      {
+        title: "Project Management",
+        icon: "ClipboardList",
+        items: [
+          "Coordination of academic and research projects in collaboration with Plastinovo S.A.S.",
+          "Participation in DESCUBRE and IMPACTA programs from the Technology Transfer Office",
+          "Identification of market exit routes for research results",
+          "Comprehensive management of project resources and timelines"
+        ]
+      },
+      {
+        title: "Applied Research",
+        icon: "FlaskConical",
+        items: [
+          "Design of anatomical models for teaching and medical personnel training",
+          "Development of innovative medical devices",
+          "Integration of advanced manufacturing technologies (3D printing)",
+          "Prototype validation with healthcare professionals"
+        ]
+      },
+      {
+        title: "Scientific Communication",
+        icon: "BookOpenCheck",
+        items: [
+          "Presentation of results at national and international conferences",
+          "Publication of scientific articles as first author",
+          "Writing of technical book chapters",
+          "Collaboration on publications as co-author"
+        ]
+      }
+    ],
+    highlights: ["Technology Transfer", "Innovation", "Publications"],
+    logo: uniandesLogo
+  },
+  {
+    id: "coatible",
+    startDate: "Aug 2021",
+    endDate: "Present",
+    type: "work",
+    title: "Co-founder and CTO - Coatible",
+    institution: "Universidad de los Andes",
+    location: "Technology Entrepreneurship",
+    shortDescription: "Development of anti-fogging technology for laparoscopes",
+    fullDescription: [],
+    sections: [
+      {
+        title: "Technological Development",
+        icon: "FlaskConical",
+        items: [
+          "Design and development of innovative hydrophobic film for laparoscopes",
+          "Management of all stages: technical design, prototyping and validation",
+          "Application of surface chemistry and biomaterials principles",
+          "Manufacturing process optimization"
+        ]
+      },
+      {
+        title: "Awards",
+        icon: "GraduationCap",
+        items: [
+          "Best Project 2023-2 of BITT Seedbed (Biodesign, Innovation and Technology)",
+          "Third Best Project in Life Sciences - Deep Tech 2024 (Mentor-UNAL)",
+          "Recognition for innovation in medical devices"
+        ]
+      },
+      {
+        title: "Business Competencies",
+        icon: "ClipboardList",
+        items: [
+          "Technical leadership and interdisciplinary team management",
+          "Business model development for medical technology",
+          "Intellectual property protection",
+          "Pitching and presentation to investors"
+        ]
+      }
+    ],
+    highlights: ["Entrepreneurship", "Medical Innovation", "Awards"],
+    logo: uniandesLogo
+  },
+  {
+    id: "bachelor",
+    startDate: "2018",
+    endDate: "2022",
+    type: "education",
+    title: "Bachelor's in Biomedical Engineering",
+    institution: "Universidad de los Andes",
+    location: "Bogotá, Colombia",
+    shortDescription: "Third place among graduating class. Vamos Pa'lante Scholarship.",
+    fullDescription: [],
+    sections: [{
+      title: "Academic Recognition",
       icon: "GraduationCap",
       items: [
-        "First place among graduates in Master's in Biomedical Engineering",
-        "Graduate teaching assistantship awarded by the Department of Biomedical Engineering",
-        "Research focused on molecular biotechnology and gene editing"
+        "Third place among graduates in Biomedical Engineering Bachelor's program",
+        "Vamos Pa'lante Scholarship during semesters 2021-2 and 2022-1 for outstanding academic performance",
+        "Comprehensive training in biomedical engineering with focus on molecular biotechnology"
       ]
-    },
-    {
-      title: "Main Research",
+    }, {
+      title: "Study Areas",
       icon: "FlaskConical",
       items: [
-        "Gene therapies for neurodegenerative diseases using CRISPR-Cas",
-        "Synthesis and characterization of nanobiomaterials for biomedical applications",
-        "Development of anatomical models for teaching and medical training",
-        "Design of innovative medical devices",
-        "Application of advanced molecular biology techniques"
+        "Molecular and Cellular Biotechnology",
+        "Biomaterials and Nanobiomaterials",
+        "Tissue Engineering",
+        "Medical Devices",
+        "Computational Modeling"
       ]
-    },
-    {
-      title: "Publications and Presentations",
-      icon: "BookOpenCheck",
-      items: [
-        "Scientific articles as first author in international journals",
-        "Three book chapters as first author",
-        "Co-authorship in three additional articles",
-        "Presentations at national and international conferences in Spanish and English"
-      ]
-    },
-    {
-      title: "Developed Competencies",
-      icon: "ClipboardList",
-      items: [
-        "Gene editing with CRISPR-Cas systems",
-        "Tissue engineering and cell culture",
-        "Synthesis of nanomaterials for biomedical applications",
-        "Computational modeling of biological systems",
-        "Technology transfer and project management",
-        "Advanced scientific communication"
-      ]
-    }
-  ],
-  achievements: [
-    "First place among master's graduates",
-    "Graduate teaching assistantship",
-    "Multiple scientific publications"
-  ],
-  logo: uniandesLogo,
-  ranking: "QS #212"
-}, {
-  id: "research-professional",
-  startDate: "Jul 2024",
-  endDate: "Present",
-  type: "work",
-  title: "Research Project Professional",
-  institution: "Universidad de los Andes",
-  location: "Department of Biomedical Engineering",
-  shortDescription: "Technology transfer and project management with Plastinovo S.A.S.",
-  fullDescription: [],
-  sections: [
-    {
-      title: "Project Management",
-      icon: "ClipboardList",
-      items: [
-        "Coordination of academic and research projects in collaboration with Plastinovo S.A.S.",
-        "Participation in DESCUBRE and IMPACTA programs from the Technology Transfer Office",
-        "Identification of market exit routes for research results",
-        "Comprehensive management of project resources and timelines"
-      ]
-    },
-    {
-      title: "Applied Research",
-      icon: "FlaskConical",
-      items: [
-        "Design of anatomical models for teaching and medical personnel training",
-        "Development of innovative medical devices",
-        "Integration of advanced manufacturing technologies (3D printing)",
-        "Prototype validation with healthcare professionals"
-      ]
-    },
-    {
-      title: "Scientific Communication",
-      icon: "BookOpenCheck",
-      items: [
-        "Presentation of results at national and international conferences",
-        "Publication of scientific articles as first author",
-        "Writing of technical book chapters",
-        "Collaboration on publications as co-author"
-      ]
-    }
-  ],
-  highlights: ["Technology Transfer", "Innovation", "Publications"],
-  logo: uniandesLogo
-}, {
-  id: "coatible",
-  startDate: "Aug 2021",
-  endDate: "Present",
-  type: "work",
-  title: "Co-founder and CTO - Coatible",
-  institution: "Universidad de los Andes",
-  location: "Technology Entrepreneurship",
-  shortDescription: "Development of anti-fogging technology for laparoscopes",
-  fullDescription: [],
-  sections: [
-    {
-      title: "Technological Development",
-      icon: "FlaskConical",
-      items: [
-        "Design and development of innovative hydrophobic film for laparoscopes",
-        "Management of all stages: technical design, prototyping and validation",
-        "Application of surface chemistry and biomaterials principles",
-        "Manufacturing process optimization"
-      ]
-    },
-    {
-      title: "Awards",
-      icon: "GraduationCap",
-      items: [
-        "Best Project 2023-2 of BITT Seedbed (Biodesign, Innovation and Technology)",
-        "Third Best Project in Life Sciences - Deep Tech 2024 (Mentor-UNAL)",
-        "Recognition for innovation in medical devices"
-      ]
-    },
-    {
-      title: "Business Competencies",
-      icon: "ClipboardList",
-      items: [
-        "Technical leadership and interdisciplinary team management",
-        "Business model development for medical technology",
-        "Intellectual property protection",
-        "Pitching and presentation to investors"
-      ]
-    }
-  ],
-  highlights: ["Entrepreneurship", "Medical Innovation", "Awards"],
-  logo: uniandesLogo
-}];
+    }],
+    achievements: [
+      "Third place among graduating class",
+      "Vamos Pa'lante Scholarship (2021-2022)",
+      "Outstanding training in biomedical engineering"
+    ],
+    highlights: ["Academic Distinction", "Merit Scholarship"],
+    logo: uniandesLogo,
+    ranking: "QS #212"
+  },
+  {
+    id: "master",
+    startDate: "2022",
+    endDate: "2024",
+    type: "education",
+    title: "Master's in Biomedical Engineering",
+    institution: "Universidad de los Andes",
+    location: "Bogotá, Colombia",
+    shortDescription: "First place among graduates. Research in gene therapies and nanobiomaterials.",
+    fullDescription: [],
+    sections: [
+      {
+        title: "Academic Achievements",
+        icon: "GraduationCap",
+        items: [
+          "First place among graduates in Master's in Biomedical Engineering",
+          "Graduate teaching assistantship awarded by the Department of Biomedical Engineering",
+          "Research focused on molecular biotechnology and gene editing"
+        ]
+      },
+      {
+        title: "Main Research",
+        icon: "FlaskConical",
+        items: [
+          "Gene therapies for neurodegenerative diseases using CRISPR-Cas",
+          "Synthesis and characterization of nanobiomaterials for biomedical applications",
+          "Development of anatomical models for teaching and medical training",
+          "Design of innovative medical devices",
+          "Application of advanced molecular biology techniques"
+        ]
+      },
+      {
+        title: "Publications and Presentations",
+        icon: "BookOpenCheck",
+        items: [
+          "Scientific articles as first author in international journals",
+          "Three book chapters as first author",
+          "Co-authorship in three additional articles",
+          "Presentations at national and international conferences in Spanish and English"
+        ]
+      },
+      {
+        title: "Developed Competencies",
+        icon: "ClipboardList",
+        items: [
+          "Gene editing with CRISPR-Cas systems",
+          "Tissue engineering and cell culture",
+          "Synthesis of nanomaterials for biomedical applications",
+          "Computational modeling of biological systems",
+          "Technology transfer and project management",
+          "Advanced scientific communication"
+        ]
+      }
+    ],
+    achievements: [
+      "First place among master's graduates",
+      "Graduate teaching assistantship",
+      "Multiple scientific publications"
+    ],
+    logo: uniandesLogo,
+    ranking: "QS #212"
+  }
+];
 
 export const AcademicTimeline = () => {
   const [selectedEvent, setSelectedEvent] = useState<TimelineEvent | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
-    align: "start",
-    slidesToScroll: 1
-  });
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-  const [canScrollNext, setCanScrollNext] = useState(false);
+  
+  // Separate events by type
+  const workEvents = events.filter(e => e.type === "work");
+  const educationEvents = events.filter(e => e.type === "education");
+  
   const openModal = (event: TimelineEvent) => {
     setSelectedEvent(event);
     setIsModalOpen(true);
   };
+  
   const closeModal = () => {
     setIsModalOpen(false);
     setTimeout(() => setSelectedEvent(null), 300);
   };
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setCanScrollPrev(emblaApi.canScrollPrev());
-    setCanScrollNext(emblaApi.canScrollNext());
-  }, [emblaApi]);
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on("select", onSelect);
-    emblaApi.on("reInit", onSelect);
-    return () => {
-      emblaApi.off("select", onSelect);
-      emblaApi.off("reInit", onSelect);
-    };
-  }, [emblaApi, onSelect]);
+
   return <section className="min-h-screen bg-gradient-to-b from-accent/5 to-background px-6 py-20">
-      <div className="max-w-7xl mx-auto space-y-12">
+      <div className="max-w-7xl mx-auto space-y-16">
         {/* Header */}
         <div className="text-center space-y-4 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-primary">
@@ -287,72 +306,149 @@ export const AcademicTimeline = () => {
           </p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative">
-          {/* Navigation Buttons */}
-          <Button variant="outline" size="icon" className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 h-12 w-12 rounded-full shadow-lg bg-background hover:bg-secondary hover:text-white transition-all duration-300 ${!canScrollPrev ? "opacity-0 pointer-events-none" : "opacity-100"}`} onClick={scrollPrev} disabled={!canScrollPrev}>
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-          <Button variant="outline" size="icon" className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 h-12 w-12 rounded-full shadow-lg bg-background hover:bg-secondary hover:text-white transition-all duration-300 ${!canScrollNext ? "opacity-0 pointer-events-none" : "opacity-100"}`} onClick={scrollNext} disabled={!canScrollNext}>
-            <ChevronRight className="h-6 w-6" />
-          </Button>
-
-          {/* Carousel */}
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6 py-8 px-4">
-              {events.map((event, index) => {
-              const Icon = event.type === "education" ? GraduationCap : Briefcase;
-              const isEducation = event.type === "education";
-              return <div key={event.id} className="flex-[0_0_85%] sm:flex-[0_0_70%] lg:flex-[0_0_45%] min-w-0" style={{
-                animationDelay: `${index * 100}ms`
-              }}>
-                    <Card className={`h-full cursor-pointer transition-all duration-300 hover:shadow-2xl border-2 hover:border-secondary group ${isEducation ? "bg-gradient-to-br from-primary/5 to-secondary/5" : "bg-gradient-to-br from-accent/5 to-background"}`} onClick={() => openModal(event)}>
-                      <CardContent className="p-6 space-y-4">
-                        {/* Logo and Icon */}
-                        <div className="flex items-start justify-between">
-                          {event.logo && <img src={event.logo} alt={`${event.institution} logo`} className="h-12 w-auto object-contain" />}
-                          <div className={`p-3 rounded-full ${isEducation ? "bg-secondary/10" : "bg-accent/10"} group-hover:scale-110 transition-transform duration-300`}>
-                            <Icon className={`h-6 w-6 ${isEducation ? "text-secondary" : "text-accent"}`} />
-                          </div>
+        {/* Work Experience & Startup Timeline - Upper */}
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-accent flex items-center gap-2">
+            <Briefcase className="h-6 w-6" />
+            Work Experience & Startup
+          </h3>
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-accent via-accent/50 to-transparent" />
+            
+            <div className="space-y-8">
+              {workEvents.map((event, index) => (
+                <div key={event.id} className="relative pl-20 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                  {/* Timeline dot */}
+                  <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-accent border-4 border-background shadow-lg" />
+                  
+                  <Card 
+                    className="cursor-pointer transition-all duration-300 hover:shadow-2xl border-2 hover:border-accent group bg-gradient-to-br from-accent/10 to-background"
+                    onClick={() => openModal(event)}
+                  >
+                    <CardContent className="p-6 space-y-4">
+                      {/* Logo and Icon */}
+                      <div className="flex items-start justify-between">
+                        {event.logo && <img src={event.logo} alt={`${event.institution} logo`} className="h-12 w-auto object-contain" />}
+                        <div className="p-3 rounded-full bg-accent/10 group-hover:scale-110 transition-transform duration-300">
+                          <Briefcase className="h-6 w-6 text-accent" />
                         </div>
+                      </div>
 
-                        {/* Date Badge */}
-                        <Badge variant="secondary" className="w-fit bg-gradient-to-r from-secondary to-accent text-white">
-                          {event.startDate} – {event.endDate}
-                        </Badge>
+                      {/* Date Badge */}
+                      <Badge variant="secondary" className="w-fit bg-gradient-to-r from-accent to-accent/70 text-white">
+                        {event.startDate} – {event.endDate}
+                      </Badge>
 
-                        {/* Content */}
-                        <div className="space-y-2">
-                          <h3 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
-                            {event.title}
-                          </h3>
-                          <p className="text-base font-semibold text-foreground">
-                            {event.institution}
-                          </p>
-                          {event.ranking && <Badge variant="outline" className="border-secondary/50 text-secondary">
-                              {event.ranking}
-                            </Badge>}
-                          <p className="text-sm text-muted-foreground line-clamp-2">
-                            {event.shortDescription}
-                          </p>
+                      {/* Content */}
+                      <div className="space-y-2">
+                        <h4 className="text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                          {event.title}
+                        </h4>
+                        <p className="text-base font-semibold text-foreground">
+                          {event.institution}
+                        </p>
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {event.shortDescription}
+                        </p>
+                      </div>
+
+                      {/* Highlights */}
+                      {event.highlights && event.highlights.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {event.highlights.map(highlight => (
+                            <Badge key={highlight} variant="outline" className="text-xs border-accent/50 text-accent">
+                              {highlight}
+                            </Badge>
+                          ))}
                         </div>
+                      )}
 
-                        {/* Highlights */}
-                        {event.highlights && event.highlights.length > 0 && <div className="flex flex-wrap gap-2">
-                            {event.highlights.map(highlight => <Badge key={highlight} variant="outline" className="text-xs">
-                                {highlight}
-                              </Badge>)}
-                          </div>}
+                      {/* Call to action */}
+                      <div className="pt-2 flex items-center gap-2 text-accent group-hover:gap-3 transition-all duration-300">
+                        <span className="text-sm font-semibold">View details</span>
+                        <ExternalLink className="h-4 w-4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-                        {/* Call to action */}
-                        <div className="pt-2 flex items-center gap-2 text-secondary group-hover:gap-3 transition-all duration-300">
-                          <span className="text-sm font-semibold">View details</span>
-                          <ExternalLink className="h-4 w-4" />
+        {/* Education Timeline - Lower */}
+        <div className="space-y-6">
+          <h3 className="text-2xl font-bold text-secondary flex items-center gap-2">
+            <GraduationCap className="h-6 w-6" />
+            Academic Studies
+          </h3>
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-secondary via-secondary/50 to-transparent" />
+            
+            <div className="space-y-8">
+              {educationEvents.map((event, index) => (
+                <div key={event.id} className="relative pl-20 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                  {/* Timeline dot */}
+                  <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-secondary border-4 border-background shadow-lg" />
+                  
+                  <Card 
+                    className="cursor-pointer transition-all duration-300 hover:shadow-2xl border-2 hover:border-secondary group bg-gradient-to-br from-primary/5 to-secondary/5"
+                    onClick={() => openModal(event)}
+                  >
+                    <CardContent className="p-6 space-y-4">
+                      {/* Logo and Icon */}
+                      <div className="flex items-start justify-between">
+                        {event.logo && <img src={event.logo} alt={`${event.institution} logo`} className="h-12 w-auto object-contain" />}
+                        <div className="p-3 rounded-full bg-secondary/10 group-hover:scale-110 transition-transform duration-300">
+                          <GraduationCap className="h-6 w-6 text-secondary" />
                         </div>
-                      </CardContent>
-                    </Card>
-                  </div>;
-            })}
+                      </div>
+
+                      {/* Date Badge */}
+                      <Badge variant="secondary" className="w-fit bg-gradient-to-r from-secondary to-accent text-white">
+                        {event.startDate} – {event.endDate}
+                      </Badge>
+
+                      {/* Content */}
+                      <div className="space-y-2">
+                        <h4 className="text-xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                          {event.title}
+                        </h4>
+                        <p className="text-base font-semibold text-foreground">
+                          {event.institution}
+                        </p>
+                        {event.ranking && (
+                          <Badge variant="outline" className="border-secondary/50 text-secondary">
+                            {event.ranking}
+                          </Badge>
+                        )}
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {event.shortDescription}
+                        </p>
+                      </div>
+
+                      {/* Highlights */}
+                      {event.highlights && event.highlights.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {event.highlights.map(highlight => (
+                            <Badge key={highlight} variant="outline" className="text-xs">
+                              {highlight}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Call to action */}
+                      <div className="pt-2 flex items-center gap-2 text-secondary group-hover:gap-3 transition-all duration-300">
+                        <span className="text-sm font-semibold">View details</span>
+                        <ExternalLink className="h-4 w-4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -53,13 +53,13 @@ const CustomTooltip = ({ active, payload }: any) => {
 
 export const ScholarMetrics = ({
   publications = 8,
-  citations = 45,
+  citations = 62,
   hIndex = 4,
   i10Index = 2,
   byYear = [
-    { year: 2022, citations: 5 },
-    { year: 2023, citations: 15 },
-    { year: 2024, citations: 25 },
+    { year: 2022, citations: 8 },
+    { year: 2023, citations: 22 },
+    { year: 2024, citations: 32 },
   ],
   scholarUrl = "https://scholar.google.com/citations?user=YOUR_ID",
 }: ScholarMetricsProps) => {

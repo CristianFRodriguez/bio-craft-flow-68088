@@ -47,14 +47,7 @@ export const Hero = () => {
               variant="default"
               size="lg"
               className="w-52 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/CV_Paula_Guzman_2025.pdf';
-                link.download = 'CV_Paula_Guzman_2025.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
+              disabled
             >
               <FileText className="mr-2 h-5 w-5" />
               Download CV

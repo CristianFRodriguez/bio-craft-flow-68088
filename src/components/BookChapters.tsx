@@ -23,15 +23,15 @@ interface BookChapter {
 const bookChaptersData: BookChapter[] = [
   {
     id: "chapter-1",
-    title: "Classical and Emerging Approximations for the Screening of Antimicrobial Peptide Libraries",
-    authors: "Rodríguez, Cristian F.; Quezada, Valentina; Andrade-Pérez, Valentina; et al.",
+    title: "Physicochemical and biochemical characterization of antimicrobial peptides",
+    authors: "Valentina Quezada, Paula Guzmán-Satoque, María Camila Rincón-Garcia, Luis H Reyes, Juan C Cruz",
     book: "Antimicrobial Peptides (Elsevier), pp. 195–232",
     year: 2025,
     type: "Book Chapter",
     summary:
-      "This chapter explores classical and emerging methodologies for screening peptide libraries, a pivotal process in pharmaceutical research for identifying therapeutic peptides. Classical techniques like phage, ribosome, and cell surface display have been foundational, yet they face limitations such as being labor-intensive and requiring large material amounts. Emerging alternatives, notably microfluidic systems, and nanotechnology-based platforms, offer significant advancements by enabling high throughput, cost efficiency, and minimal sample volumes, thereby addressing classical methods’ constraints. The chapter also discusses the integration of machine learning algorithms to enhance screening accuracy and efficiency. Despite progress, challenges remain in optimizing specificity, and sensitivity, and integrating diverse technologies. Future perspectives highlight the potential for further advancements in screening specificity, efficiency, and throughput, underscoring the critical role of innovation in leveraging peptide libraries for drug discovery. This exploration provides insights into the evolving landscape of pharmaceutical research, emphasizing the need for continued development in peptide library screening techniques.",
+      "Due to their diverse mechanisms of action compared to traditional antibiotics, antimicrobial peptides (AMPs) have become a promising new class of antibiotics. However, their translation into clinical applications involves an exhaustive understanding of their physicochemical and biochemical properties. Physicochemical analyses use a variety of techniques, such as spectrometry, chromatography, and computational methods, to determine fundamental properties such as molecular weight, amino acid composition, and structural characteristics. Biochemical studies pursue to explain peptide properties in a more biological context and offer insights into in vitro and in vivo behaviors, such as their pharmacokinetic profile, stability, and bioavailability. Despite their potential, limitations such as susceptibility to enzymatic degradation and deactivation in high-salt environments can hinder their clinical utility. This chapter provides a comprehensive overview of valuable techniques and assays to characterize AMPs in terms of their physicochemical and biochemical properties, facilitating their translation to clinical applications.",
     image: book1Image,
-    link: "https://www.sciencedirect.com/science/article/abs/pii/B9780443153938000099",
+    link: "https://www.sciencedirect.com/science/article/pii/B9780443153938000129",
   },
   {
     id: "chapter-2",

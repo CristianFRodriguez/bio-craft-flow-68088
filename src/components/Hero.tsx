@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { FileText, GraduationCap, Linkedin, Mail } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo-paula.jpg";
+
 export const Hero = () => {
-  return <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-accent/10 px-6 py-20">
+
+  return (
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-accent/10 px-6 py-20">
       <div className="max-w-6xl w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Profile Image */}
         <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-secondary to-accent rounded-full blur-2xl opacity-20 animate-pulse-glow"></div>
-            <img src={profilePhoto} alt="Paula Guzmán" className="relative w-80 h-80 object-cover rounded-full border-4 border-background shadow-2xl hover:scale-105 transition-transform duration-500" />
+            <img
+              src={profilePhoto}
+              alt="Paula Guzmán"
+              className="relative w-80 h-80 object-cover rounded-full border-4 border-background shadow-2xl hover:scale-105 transition-transform duration-500"
+            />
           </div>
         </div>
 
@@ -36,21 +43,45 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            
-            <Button variant="outline" size="lg" className="w-52 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 hover:scale-105" onClick={() => window.open('https://scholar.google.com/citations?user=rdzwkSYAAAAJ&hl=en', '_blank')}>
+            <Button
+              variant="default"
+              size="lg"
+              className="w-52 bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              disabled
+            >
+              <FileText className="mr-2 h-5 w-5" />
+              Download CV
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="w-52 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 hover:scale-105"
+              onClick={() => window.open('https://scholar.google.com/citations?user=rdzwkSYAAAAJ&hl=en', '_blank')}
+            >
               <GraduationCap className="mr-2 h-5 w-5" />
               Google Scholar
             </Button>
-            <Button variant="outline" size="lg" className="w-52 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 hover:scale-105" onClick={() => window.open('https://www.linkedin.com/in/paula-guzm%C3%A1n/', '_blank')}>
+            <Button
+              variant="outline"
+              size="lg"
+              className="w-52 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300 hover:scale-105"
+              onClick={() => window.open('https://www.linkedin.com/in/paula-guzm%C3%A1n/', '_blank')}
+            >
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn
             </Button>
-            <Button variant="outline" size="lg" className="w-52 border-2 border-accent text-primary hover:bg-accent transition-all duration-300 hover:scale-105" onClick={() => window.location.href = 'mailto:pa-guzmans@uniandes.edu.co'}>
+            <Button
+              variant="outline"
+              size="lg"
+              className="w-52 border-2 border-accent text-primary hover:bg-accent transition-all duration-300 hover:scale-105"
+              onClick={() => window.location.href = 'mailto:pa-guzmans@uniandes.edu.co'}
+            >
               <Mail className="mr-2 h-5 w-5" />
               Contact
             </Button>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };

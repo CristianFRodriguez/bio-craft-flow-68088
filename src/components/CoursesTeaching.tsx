@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import courseBiomaterials from "@/assets/course-biomaterials.png";
-import courseBioprinting from "@/assets/course-bioprinting.png";
+import vanderHumanPhysiology from "@/assets/vander-human-physiology.png";
+import vanderRenalPhysiology from "@/assets/vander-renal-physiology.png";
 type CourseCard = {
   title: string;
   year: string;
@@ -13,15 +13,15 @@ type CourseCard = {
 const courses: CourseCard[] = [{
   title: "Quantitative Physiology I",
   year: "2022-2024",
-  image: courseBiomaterials,
-  alt: "Fisiología Cuantitativa I",
+  image: vanderHumanPhysiology,
+  alt: "Vander's Human Physiology",
   description: "Undergraduate course focused on quantitative modeling of physiological systems with comprehensive academic coordination.",
   tags: ["Teaching", "Physiology", "Modeling"]
 }, {
   title: "Quantitative Physiology II",
   year: "2022-2024",
-  image: courseBioprinting,
-  alt: "Fisiología Cuantitativa II",
+  image: vanderRenalPhysiology,
+  alt: "Vander's Renal Physiology",
   description: "Continuation of quantitative physiology with emphasis on advanced systems and academic management.",
   tags: ["Physiology", "Analysis", "Management"]
 }];

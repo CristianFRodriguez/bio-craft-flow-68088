@@ -56,7 +56,7 @@ const events: TimelineEvent[] = [
     startDate: "Jan 2025",
     endDate: "Present",
     type: "work",
-    title: "Professional in Technology Codevelopment Industrial Projects",
+    title: "Technology Co-Development and Industrial Projects Professional",
     institution: "Ecosistema de Innovación, Emprendimiento y Transferencia - Uniandes",
     location: "On-site",
     shortDescription: "Managing technology transfer projects across multiple industries. $5M in grants obtained.",
